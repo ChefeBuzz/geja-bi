@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
 GEJA BI — Build Script
-REGRA OFICIAL INADIMPLENCIA (Regra B):
-  Inadimplente = tem "EM ATRASO!!" em QUALQUER semestre
-  (1s2025 col8, 2s2025 col10, 1s2026 col14)
+REGRA OFICIAL INADIMPLENCIA:
+  INADIMPLENTE = "EM ATRASO!!" em qualquer semestre
+               OU célula vazia/branco em qualquer semestre ("Não Informado")
+  FORA DA LISTA = Pago, Nao Se Aplica, Isencao, Licenca, Desligamento, Nao Incluido
 """
 import json, os, sys
 from datetime import datetime, timezone, timedelta, date
@@ -37,22 +38,41 @@ def col(row, i, default=""):
         return str(v).strip() if v not in (None, "") else default
     except: return default
 
-def is_atraso(val):
-    """True se a célula contém EM ATRASO!! (marcação oficial de inadimplência)"""
-    return "EM ATRASO" in str(val).upper()
+# Valores que indicam que o pagamento está QUITADO ou NÃO SE APLICA
+QUITADOS = {
+    "nao se aplica", "não se aplica",
+    "nao incluido", "não incluído", "nao incluído",
+    "isencao", "isenção",
+    "licenca", "licença",
+    "desligamento",
+}
 
 def classifica_pag(val):
-    if not val or val in ("-", "", "—"): return "Nao informado"
-    v = str(val).strip()
-    if is_atraso(v):                     return "EM ATRASO!!"
-    if "SE APLICA" in v.upper():         return "Nao Se Aplica"
-    if "INCLU" in v.upper():             return "Nao Incluido"
-    if "ISEN" in v.upper():              return "Isencao"
-    if "LICEN" in v.upper():             return "Licenca"
-    if "DESLIG" in v.upper():            return "Desligamento"
-    if v.startswith("#") or "PAGO" in v.upper() or "TRANSFER" in v.upper():
+    """
+    Retorna classificação do pagamento.
+    Vazio/branco → 'Nao Informado'  (INADIMPLENTE)
+    EM ATRASO!!  → 'EM ATRASO!!'   (INADIMPLENTE)
+    Resto        → classificação normal (NÃO inadimplente)
+    """
+    v = str(val).strip() if val else ""
+    # Vazio ou traço → Não Informado
+    if not v or v in ("-", "—", "x", "X"):
+        return "Nao Informado"
+    vu = v.upper()
+    if "EM ATRASO" in vu:                    return "EM ATRASO!!"
+    if "SE APLICA" in vu:                    return "Nao Se Aplica"
+    if "INCLU" in vu:                        return "Nao Incluido"
+    if "ISEN" in vu:                         return "Isencao"
+    if "LICEN" in vu:                        return "Licenca"
+    if "DESLIG" in vu:                       return "Desligamento"
+    if v.startswith("#") or "PAGO" in vu or "TRANSFER" in vu:
         return "Pago"
     return "Outro"
+
+def is_inadimplente(val):
+    """True se o valor indica inadimplência (EM ATRASO!! ou vazio)"""
+    c = classifica_pag(val)
+    return c in ("EM ATRASO!!", "Nao Informado")
 
 print("Lendo aba Dados...")
 ws        = sh.worksheet("Dados (2025 - 2026)")
@@ -68,7 +88,7 @@ I_NASC=48; I_ST_LIC=34; I_ST_DESL=39
 hoje = date.today()
 associados = []
 adultos    = []
-atraso_nomes = []  # inadimplentes — EM ATRASO!! em QUALQUER semestre
+atraso_nomes = []
 
 for row in data_rows:
     nome = col(row, I_NOME)
@@ -116,9 +136,9 @@ for row in data_rows:
     if a["categoria"] in ("Escotista","Dirigente","Colaboradores"):
         adultos.append(a)
 
-    # REGRA B: inadimplente se EM ATRASO!! em QUALQUER semestre
+    # REGRA FINAL: inadimplente se EM ATRASO!! OU vazio em qualquer semestre
     if status == "2. Ativo":
-        if is_atraso(p1s25_raw) or is_atraso(p2s25_raw) or is_atraso(p1s26_raw):
+        if is_inadimplente(p1s25_raw) or is_inadimplente(p2s25_raw) or is_inadimplente(p1s26_raw):
             atraso_nomes.append(nome)
 
 atraso_nomes = sorted(set(atraso_nomes))
@@ -137,7 +157,6 @@ secoes_map = {
     "(4) TSY": {"ramo":"Senior","faixa":"Senior - 15-17 anos","color":"#F59E0B","bg":"#92400E"},
     "(5) CLÃ": {"ramo":"Pioneiro","faixa":"Pioneiro - 18-21 anos","color":"#8B5CF6","bg":"#6D28D9"},
 }
-ADULTO_SECS = {"ADM","DME","ECOM","EEVT","EGAD","ELAN","ELOJ","EMED","EPAT","GOV","PRES"}
 
 secoes_data   = {k: [] for k in list(secoes_map.keys()) + ["Adultos Voluntarios"]}
 secoes_config = []
@@ -191,7 +210,6 @@ secoes_config.append({
 })
 
 total_ativos = sum(s["total"] for s in secoes_config)
-
 brt = timezone(timedelta(hours=-3))
 ts  = datetime.now(brt).strftime("%d/%m/%Y as %H:%M (BRT)")
 print(f"Timestamp: {ts}")

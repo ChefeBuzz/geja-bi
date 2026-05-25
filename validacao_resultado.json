@@ -1,223 +1,424 @@
 {
-  "total_inad": 25,
-  "inadimplentes": [
+  "regra": "Inadimplente = celula contem 'EM ATRASO!!'",
+  "inad_1s2026": [
     {
       "nome": "ALICE BIESEMEYER COSTA",
       "secao": "(4) TSI",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Não Incluído",
+      "2s2025": "Não Incluído",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "ANA CLARA AUGUSTO CAPARROZ",
       "secao": "(4) TSY",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Licença",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "ARTHUR FERREIRA RACANELLI DE FREITAS",
       "secao": "(3) TEA",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Não Incluído",
+      "2s2025": "Não Incluído",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "AURÉLIO CAITANO D’HOLLANDA",
       "secao": "(2) ALG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Não Incluído",
+      "2s2025": "Não Incluído",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "CAROLINA FERREIRA RACANELLI DE FREITAS",
       "secao": "(3) TEG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Não Incluído",
+      "2s2025": "Não Incluído",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "CLARICE FERREIRA DE SOUSA ROCHA",
       "secao": "(3) TEG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Não informado",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "ENZO NERY BASTOS",
       "secao": "(3) TEA",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "GABRIEL BARBOSA BRAUN CHAVES",
       "secao": "(3) TEA",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "GABRIEL BRAGA SCHERER DE SOUZA",
       "secao": "(4) TSI",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "JOANA LIMA DE OLIVEIRA LARA",
       "secao": "(3) TECS",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Não informado",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "JOAQUIM SANTOS RECH",
       "secao": "(2) ALG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Não informado",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "JOÃO DE CARVALHO MACHADO",
       "secao": "(4) TSY",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "JOÃO TABARI MESQUITA BARBOSA",
       "secao": "(4) TSY",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "LIDIA COSMO DE BARROS",
       "secao": "(5) CLÃ",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
-    },
-    {
-      "nome": "LORENA DA COSTA COELHO VERAS",
-      "secao": "(5) CLÃ",
-      "valor_raw": "Conferir com o BUZZ se participou de alguma atividade",
-      "classificacao": "OUTRO: Conferir com o BUZZ se pa"
+      "categoria": "Beneficiário",
+      "1s2025": "Não Incluído",
+      "2s2025": "Não Incluído",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "LUAN NERY BASTOS",
       "secao": "(3) TEA",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "LUIZA AYAME MARTINS SILVEIRA SIQUEIRA",
       "secao": "(2) ALP",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Não informado",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "MAHIRI MORENA SOUSA ABREU",
       "secao": "(2) ALG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "MANUELA LOPES MARTINS",
       "secao": "(3) TEG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Não informado",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "MARIA EDUARDA MAQUINE HORTA",
       "secao": "(3) TEG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "MATEUS FELIPE TONELLO",
       "secao": "(3) TEA",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "OLIVIA GUADAGNIN MARCONI",
       "secao": "(2) ALG",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "OLÍVIA BARBOSA BRAUN CHAVES",
       "secao": "(4) TSI",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     },
     {
       "nome": "RAUL DUARTE BASTOS SENA",
       "secao": "(3) TEA",
-      "valor_raw": "EM ATRASO!!",
-      "classificacao": "OUTRO: EM ATRASO!!"
-    },
-    {
-      "nome": "REBECA PORTELA SANTOS",
-      "secao": "(3) TECS",
-      "valor_raw": "Parcelado em 3x\n#57300 - xxxxx - xxxxx",
-      "classificacao": "OUTRO: Parcelado em 3x\n#57300 - "
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "Pago",
+      "1s2026": "EM ATRASO!!"
     }
   ],
+  "inad_2s2025": [
+    {
+      "nome": "HEITOR OLIVEIRA COTTA GRANATO DE CASTRO",
+      "secao": "(2) ALP",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "ITALO RIGOTTI SOUSA NASCIMENTO",
+      "secao": "(4) TSY",
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "JOÃO DE CARVALHO MACHADO",
+      "secao": "(4) TSY",
+      "categoria": "Beneficiário",
+      "1s2025": "Pago",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
+    },
+    {
+      "nome": "LAURA LOPES DE MELLO",
+      "secao": "(2) AUC",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "LUIS EDUARDO TONELLO",
+      "secao": "(4) TSI",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Licença"
+    },
+    {
+      "nome": "MAHIRI MORENA SOUSA ABREU",
+      "secao": "(2) ALG",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
+    },
+    {
+      "nome": "MATEUS FELIPE TONELLO",
+      "secao": "(3) TEA",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
+    },
+    {
+      "nome": "RAFAEL GOMES RODRIGUES",
+      "secao": "(2) ALG",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Licença"
+    }
+  ],
+  "inad_1s2025": [
+    {
+      "nome": "ALICE SENA MAMEDE",
+      "secao": "(2) AUC",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Pago",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "ANA CLARA AUGUSTO CAPARROZ",
+      "secao": "(4) TSY",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Licença",
+      "1s2026": "EM ATRASO!!"
+    },
+    {
+      "nome": "HEITOR OLIVEIRA COTTA GRANATO DE CASTRO",
+      "secao": "(2) ALP",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "ISABEL PEREIRA MATOS",
+      "secao": "(4) TSI",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Pago",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "LAURA LOPES DE MELLO",
+      "secao": "(2) AUC",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "LUIS EDUARDO TONELLO",
+      "secao": "(4) TSI",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Licença"
+    },
+    {
+      "nome": "MAHIRI MORENA SOUSA ABREU",
+      "secao": "(2) ALG",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
+    },
+    {
+      "nome": "MARIA ALICE CHAVES DE CARVALHO",
+      "secao": "(3) TEA",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Pago",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "MARIA CECÍLIA CHAVES DE CARVALHO",
+      "secao": "(2) AUC",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Pago",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "MATEUS FELIPE TONELLO",
+      "secao": "(3) TEA",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "EM ATRASO!!"
+    },
+    {
+      "nome": "ODIN MIGUEL SOUSA ABREU",
+      "secao": "(3) TEA",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "Pago",
+      "1s2026": "Pago"
+    },
+    {
+      "nome": "RAFAEL GOMES RODRIGUES",
+      "secao": "(2) ALG",
+      "categoria": "Beneficiário",
+      "1s2025": "EM ATRASO!!",
+      "2s2025": "EM ATRASO!!",
+      "1s2026": "Licença"
+    }
+  ],
+  "total_1s2026": 23,
+  "total_2s2025": 8,
+  "total_1s2025": 12,
   "italo_e_isabel": [
     {
       "nome": "ISABELA KILA ZOZULA",
       "status": "2. Ativo",
       "secao": "(2) AUC",
-      "1s2025": "NÃO INCLUÍDO",
-      "status_1s2025": "Não Incluído",
-      "2s2025": "NÃO INCLUÍDO",
-      "status_2s2025": "Não Incluído",
-      "1s2026": "#57304 10.04.2026",
-      "status_1s2026": "Pago"
+      "1s2025": "Não Incluído",
+      "atraso_1s2025": false,
+      "2s2025": "Não Incluído",
+      "atraso_2s2025": false,
+      "1s2026": "Pago",
+      "atraso_1s2026": false
     },
     {
       "nome": "ISABEL PEREIRA MATOS",
       "status": "2. Ativo",
       "secao": "(4) TSI",
       "1s2025": "EM ATRASO!!",
-      "status_1s2025": "OUTRO: EM ATRASO!!",
-      "2s2025": "#51119 24/07/2025",
-      "status_2s2025": "Pago",
-      "1s2026": "#57452 03.05.2026",
-      "status_1s2026": "Pago"
+      "atraso_1s2025": true,
+      "2s2025": "Pago",
+      "atraso_2s2025": false,
+      "1s2026": "Pago",
+      "atraso_1s2026": false
     },
     {
       "nome": "ITALO RIGOTTI SOUSA NASCIMENTO",
       "status": "2. Ativo",
       "secao": "(4) TSY",
-      "1s2025": "#51076 07/07/2025",
-      "status_1s2025": "Pago",
+      "1s2025": "Pago",
+      "atraso_1s2025": false,
       "2s2025": "EM ATRASO!!",
-      "status_2s2025": "OUTRO: EM ATRASO!!",
-      "1s2026": "#57103 10.03.2026",
-      "status_1s2026": "Pago"
+      "atraso_2s2025": true,
+      "1s2026": "Pago",
+      "atraso_1s2026": false
     },
     {
       "nome": "ISABELLA MATTOS AMORIM",
       "status": "2. Ativo",
       "secao": "(5) CLÃ",
-      "1s2025": "#50409 11/03/2025",
-      "status_1s2025": "Pago",
-      "2s2025": "PAGO 29.08.2025",
-      "status_2s2025": "Pago",
-      "1s2026": "#57137 12.03.2026",
-      "status_1s2026": "Pago"
+      "1s2025": "Pago",
+      "atraso_1s2025": false,
+      "2s2025": "Pago",
+      "atraso_2s2025": false,
+      "1s2026": "Pago",
+      "atraso_1s2026": false
     },
     {
       "nome": "ISABELLA FEITOSA PELEGRINI",
       "status": "4. Desl.",
       "secao": "",
-      "1s2025": "",
-      "status_1s2025": "NAO PAGO",
-      "2s2025": "",
-      "status_2s2025": "NAO PAGO",
-      "1s2026": "DESLIGAMENTO",
-      "status_1s2026": "Desligamento"
+      "1s2025": "Não informado",
+      "atraso_1s2025": false,
+      "2s2025": "Não informado",
+      "atraso_2s2025": false,
+      "1s2026": "Desligamento",
+      "atraso_1s2026": false
     },
     {
       "nome": "ISABELLA VARELA DE OLIVEIRA",
       "status": "4. Desl.",
       "secao": "",
-      "1s2025": "#50458 22/03/2025",
-      "status_1s2025": "Pago",
-      "2s2025": "#51416 12/08/2025",
-      "status_2s2025": "Pago",
-      "1s2026": "DESLIGAMENTO",
-      "status_1s2026": "Desligamento"
+      "1s2025": "Pago",
+      "atraso_1s2025": false,
+      "2s2025": "Pago",
+      "atraso_2s2025": false,
+      "1s2026": "Desligamento",
+      "atraso_1s2026": false
     }
   ]
 }

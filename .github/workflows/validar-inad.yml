@@ -6,19 +6,16 @@ on:
 jobs:
   validar:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install gspread google-auth -q
-      - name: Validar dados ao vivo
+      - name: Validar e salvar resultado
         env:
           GEJA_SA_KEY: ${{ secrets.GEJA_SA_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python validar_inad.py
-      - name: Salvar resultado como artefato
-        uses: actions/upload-artifact@v4
-        with:
-          name: validacao-resultado
-          path: validacao_resultado.json
-          retention-days: 1

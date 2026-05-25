@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-import json, os, sys, base64, urllib.request
+"""
+Regra oficial de inadimplência:
+  Inadimplente = célula contém "EM ATRASO!!" (qualquer semestre)
+  Tudo mais (vazio, #numero, NÃO SE APLICA, etc.) NÃO é inadimplente.
+"""
+import json, os, base64, urllib.request
 from google.oauth2.service_account import Credentials
 import gspread
 
@@ -22,70 +27,108 @@ def col(row, i):
     try: return str(row[i]).strip() if i < len(row) else ""
     except: return ""
 
-def pag(val):
-    if not val or val in ("-","—",""): return "NAO PAGO"
-    v = val.strip().upper()
-    if "SE APLICA" in v:  return "Não Se Aplica"
-    if "INCLU"     in v:  return "Não Incluído"
-    if "ISEN"      in v:  return "Isenção"
-    if "LICEN"     in v:  return "Licença"
-    if "DESLIG"    in v:  return "Desligamento"
-    if v.startswith("#") or "PAGO" in v or "TRANSFER" in v: return "Pago"
-    return "OUTRO: " + val[:25]
+def is_atraso(val):
+    """Regra oficial: inadimplente SOMENTE se contém 'EM ATRASO!!'"""
+    return "EM ATRASO" in str(val).upper()
 
-# Coletar inadimplentes
-inad = []
+def classifica(val):
+    v = str(val).strip()
+    if not v or v in ("-","—"):          return "Não informado"
+    if "EM ATRASO" in v.upper():         return "EM ATRASO!!"
+    if "SE APLICA" in v.upper():         return "Não Se Aplica"
+    if "INCLUÍ" in v or "INCLUIDO" in v.upper(): return "Não Incluído"
+    if "ISEN" in v.upper():              return "Isenção"
+    if "LICEN" in v.upper():             return "Licença"
+    if "DESLIG" in v.upper():            return "Desligamento"
+    if v.startswith("#") or "PAGO" in v.upper() or "TRANSFER" in v.upper():
+        return "Pago"
+    return f"Outro: {v[:30]}"
+
+# Índices das colunas
+I_STATUS=0; I_NUM=1; I_NOME=2; I_CAT=3; I_SECAO=4
+I_P1S2025=8; I_P2S2025=10; I_P1S2026=14
+
+inad_1s2026 = []
+inad_2s2025 = []
+inad_1s2025 = []
 italo_isabel = []
 
 for row in data_rows:
-    nome   = col(row, 2)
-    status = col(row, 0)
+    nome   = col(row, I_NOME)
+    status = col(row, I_STATUS)
     if not nome or nome.lower() in ("nan","none",""): continue
-    
-    p1s26 = col(row, 14)
-    p2s25 = col(row, 10)
-    p1s25 = col(row, 8)
-    secao = col(row, 4)
-    pg26  = pag(p1s26)
-    
-    # Verificar Ítalo e Isabel independente do status
+
+    p1s25 = col(row, I_P1S2025)
+    p2s25 = col(row, I_P2S2025)
+    p1s26 = col(row, I_P1S2026)
+    secao = col(row, I_SECAO)
+    cat   = col(row, I_CAT)
+
+    # Verificar Ítalo e Isabel
     nl = nome.lower()
     if "italo" in nl or "ítalo" in nl or "isabel" in nl:
         italo_isabel.append({
             "nome": nome, "status": status, "secao": secao,
-            "1s2025": p1s25, "status_1s2025": pag(p1s25),
-            "2s2025": p2s25, "status_2s2025": pag(p2s25),
-            "1s2026": p1s26, "status_1s2026": pg26
+            "1s2025": classifica(p1s25), "atraso_1s2025": is_atraso(p1s25),
+            "2s2025": classifica(p2s25), "atraso_2s2025": is_atraso(p2s25),
+            "1s2026": classifica(p1s26), "atraso_1s2026": is_atraso(p1s26),
         })
-    
-    # Inadimplentes: ativos com 1s2026 não pago
-    if status == "2. Ativo" and pg26 not in ("Pago","Não Se Aplica","Isenção","Não Incluído","Licença","Desligamento"):
-        inad.append({"nome": nome, "secao": secao, "valor_raw": p1s26, "classificacao": pg26})
 
-inad.sort(key=lambda x: x["nome"])
+    # Só considerar ativos
+    if status != "2. Ativo": continue
+
+    entry = {"nome": nome, "secao": secao, "categoria": cat,
+             "1s2025": classifica(p1s25),
+             "2s2025": classifica(p2s25),
+             "1s2026": classifica(p1s26)}
+
+    if is_atraso(p1s26): inad_1s2026.append(entry)
+    if is_atraso(p2s25): inad_2s2025.append(entry)
+    if is_atraso(p1s25): inad_1s2025.append(entry)
+
+inad_1s2026.sort(key=lambda x: x["nome"])
+inad_2s2025.sort(key=lambda x: x["nome"])
+inad_1s2025.sort(key=lambda x: x["nome"])
+
+print(f"\n=== INADIMPLENTES POR SEMESTRE ===")
+print(f"  1s2025: {len(inad_1s2025)}")
+print(f"  2s2025: {len(inad_2s2025)}")
+print(f"  1s2026: {len(inad_1s2026)}")
+
+print(f"\n=== ÍTALO E ISABEL ===")
+for p in italo_isabel:
+    print(f"  {p['nome']} | {p['status']} | {p['secao']}")
+    print(f"    1s2025: {p['1s2025']} {'⚠️' if p['atraso_1s2025'] else ''}")
+    print(f"    2s2025: {p['2s2025']} {'⚠️' if p['atraso_2s2025'] else ''}")
+    print(f"    1s2026: {p['1s2026']} {'⚠️' if p['atraso_1s2026'] else ''}")
 
 result = {
-    "total_inad": len(inad),
-    "inadimplentes": inad,
+    "regra": "Inadimplente = celula contem 'EM ATRASO!!'",
+    "inad_1s2026": inad_1s2026,
+    "inad_2s2025": inad_2s2025,
+    "inad_1s2025": inad_1s2025,
+    "total_1s2026": len(inad_1s2026),
+    "total_2s2025": len(inad_2s2025),
+    "total_1s2025": len(inad_1s2025),
     "italo_e_isabel": italo_isabel
 }
 
-# Gravar resultado no repositório
-content = json.dumps(result, ensure_ascii=False, indent=2)
-content_b64 = base64.b64encode(content.encode()).decode()
+# Salvar no repositório
+content_b64 = base64.b64encode(
+    json.dumps(result, ensure_ascii=False, indent=2).encode()
+).decode()
 
-# Pegar SHA se existir
 sha = None
-req_get = urllib.request.Request(
-    f"https://api.github.com/repos/{REPO}/contents/validacao_resultado.json",
-    headers={"Authorization": f"token {TOKEN}"}
-)
 try:
-    with urllib.request.urlopen(req_get) as r:
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{REPO}/contents/validacao_resultado.json",
+        headers={"Authorization": f"token {TOKEN}"}
+    )
+    with urllib.request.urlopen(req) as r:
         sha = json.loads(r.read()).get("sha")
 except: pass
 
-body = {"message": "Resultado validacao inadimplentes",
+body = {"message": "Validacao com regra EM ATRASO!!",
         "content": content_b64, "branch": "main"}
 if sha: body["sha"] = sha
 
@@ -98,6 +141,5 @@ req2 = urllib.request.Request(
     method="PUT"
 )
 with urllib.request.urlopen(req2) as r:
-    print(f"Resultado salvo no repositório! Status: {r.status}")
-
+    print(f"\nResultado salvo! ({r.status})")
 print("FIM")

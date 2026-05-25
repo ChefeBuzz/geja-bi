@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """
 GEJA BI — Build Script
-Busca dados do Google Sheets e gera payload JSON atualizado.
-Roda via GitHub Actions todo dia as 02h BRT (05h UTC).
-
-REGRA OFICIAL INADIMPLENCIA:
-  Inadimplente = celula contem "EM ATRASO!!" (marcacao explicita na planilha)
-  Qualquer outro valor (vazio, #numero, NAO SE APLICA, etc.) = nao inadimplente
+REGRA OFICIAL INADIMPLENCIA (Regra B):
+  Inadimplente = tem "EM ATRASO!!" em QUALQUER semestre
+  (1s2025 col8, 2s2025 col10, 1s2026 col14)
 """
 import json, os, sys
 from datetime import datetime, timezone, timedelta, date
@@ -40,25 +37,24 @@ def col(row, i, default=""):
         return str(v).strip() if v not in (None, "") else default
     except: return default
 
+def is_atraso(val):
+    """True se a célula contém EM ATRASO!! (marcação oficial de inadimplência)"""
+    return "EM ATRASO" in str(val).upper()
+
 def classifica_pag(val):
-    """
-    Regra oficial GEJA:
-      INADIMPLENTE = celula contem 'EM ATRASO!!' (marcacao explicita)
-      Qualquer outro valor nao e inadimplencia.
-    """
-    if not val or val in ("-", "", "x2014"): return "Nao informado"
+    if not val or val in ("-", "", "—"): return "Nao informado"
     v = str(val).strip()
-    if "EM ATRASO" in v.upper():   return "EM ATRASO!!"
-    if "SE APLICA" in v.upper():   return "Nao Se Aplica"
-    if "INCLU" in v.upper():       return "Nao Incluido"
-    if "ISEN" in v.upper():        return "Isencao"
-    if "LICEN" in v.upper():       return "Licenca"
-    if "DESLIG" in v.upper():      return "Desligamento"
+    if is_atraso(v):                     return "EM ATRASO!!"
+    if "SE APLICA" in v.upper():         return "Nao Se Aplica"
+    if "INCLU" in v.upper():             return "Nao Incluido"
+    if "ISEN" in v.upper():              return "Isencao"
+    if "LICEN" in v.upper():             return "Licenca"
+    if "DESLIG" in v.upper():            return "Desligamento"
     if v.startswith("#") or "PAGO" in v.upper() or "TRANSFER" in v.upper():
         return "Pago"
     return "Outro"
 
-print("Lendo aba Dados (2025 - 2026)...")
+print("Lendo aba Dados...")
 ws        = sh.worksheet("Dados (2025 - 2026)")
 all_rows  = ws.get_all_values()
 data_rows = all_rows[3:]
@@ -72,21 +68,24 @@ I_NASC=48; I_ST_LIC=34; I_ST_DESL=39
 hoje = date.today()
 associados = []
 adultos    = []
-atraso_2026 = []   # inadimplentes 1s2026 (EM ATRASO!! apenas)
+atraso_nomes = []  # inadimplentes — EM ATRASO!! em QUALQUER semestre
 
 for row in data_rows:
     nome = col(row, I_NOME)
-    if not nome or nome.lower() in ("nan", "none", ""): continue
+    if not nome or nome.lower() in ("nan","none",""): continue
     status = col(row, I_STATUS)
 
-    pag1s25 = classifica_pag(col(row, I_P1S2025))
-    pag2s25 = classifica_pag(col(row, I_P2S2025))
-    pag1s26 = classifica_pag(col(row, I_P1S2026))
+    p1s25_raw = col(row, I_P1S2025)
+    p2s25_raw = col(row, I_P2S2025)
+    p1s26_raw = col(row, I_P1S2026)
+
+    pag1s25 = classifica_pag(p1s25_raw)
+    pag2s25 = classifica_pag(p2s25_raw)
+    pag1s26 = classifica_pag(p1s26_raw)
 
     ingresso = 0
     try: ingresso = int(float(col(row, I_INGRESSO)))
     except: pass
-
     tempo = 0
     try: tempo = int(float(col(row, I_TEMPO)))
     except: tempo = (hoje.year - ingresso) if ingresso else 0
@@ -114,17 +113,18 @@ for row in data_rows:
     }
     associados.append(a)
 
-    if a["categoria"] in ("Escotista", "Dirigente", "Colaboradores"):
+    if a["categoria"] in ("Escotista","Dirigente","Colaboradores"):
         adultos.append(a)
 
-    # REGRA OFICIAL: inadimplente SOMENTE se "EM ATRASO!!"
-    if status == "2. Ativo" and pag1s26 == "EM ATRASO!!":
-        atraso_2026.append(nome)
+    # REGRA B: inadimplente se EM ATRASO!! em QUALQUER semestre
+    if status == "2. Ativo":
+        if is_atraso(p1s25_raw) or is_atraso(p2s25_raw) or is_atraso(p1s26_raw):
+            atraso_nomes.append(nome)
 
-atraso_2026 = sorted(set(atraso_2026))
-print(f"{len(associados)} associados | {len(adultos)} adultos | {len(atraso_2026)} inadimplentes 1s2026")
+atraso_nomes = sorted(set(atraso_nomes))
+print(f"{len(associados)} associados | {len(adultos)} adultos | {len(atraso_nomes)} inadimplentes")
 
-# Secoes PAXTU
+# Seções PAXTU
 print("Calculando secoes...")
 secoes_map = {
     "(2) ALG": {"ramo":"Lobinho","faixa":"Lobinho - 6-10 anos","color":"#10B981","bg":"#059669"},
@@ -155,7 +155,7 @@ for row in data_rows:
     nasc = col(row, I_NASC)
     idade = None
     if nasc:
-        for fmt in ("%Y-%m-%d", "%d/%m/%Y"):
+        for fmt in ("%Y-%m-%d","%d/%m/%Y"):
             try:
                 from datetime import datetime as dt
                 n = dt.strptime(nasc[:10], fmt).date()
@@ -191,14 +191,13 @@ secoes_config.append({
 })
 
 total_ativos = sum(s["total"] for s in secoes_config)
-print(f"{total_ativos} ativos em {len(secoes_config)} secoes")
 
 brt = timezone(timedelta(hours=-3))
 ts  = datetime.now(brt).strftime("%d/%m/%Y as %H:%M (BRT)")
 print(f"Timestamp: {ts}")
 
 payload = {
-    "db_adm":       {"associados": associados, "atraso_2026": atraso_2026},
+    "db_adm":       {"associados": associados, "atraso_2026": atraso_nomes},
     "db_adultos":   adultos,
     "secoes_paxtu": secoes_config,
     "secoes_data":  secoes_data,

@@ -20,25 +20,32 @@ def extract_const(h, name):
     depth=0; in_s=False; esc=False; end=eq
     for pos, ch in enumerate(h[eq:], eq):
         if esc: esc=False; continue
-        if ch==chr(92) and in_s: esc=True; continue
-        if ch==chr(34) and not esc: in_s=not in_s; continue
+        if ch == chr(92) and in_s: esc=True; continue
+        if ch == chr(34) and not esc: in_s = not in_s; continue
         if in_s: continue
         if ch in "[{": depth+=1
         elif ch in "]}":
-            depth-=1
-            if depth==0: end=pos+1; break
+            depth -= 1
+            if depth == 0: end = pos+1; break
     return h[eq:end].strip()
 
+# Preservar dados médicos (fixos até nova aba na planilha)
 db_paxtu_str = extract_const(html, "DB_PAXTU")
 data_med_str = extract_const(html, "DATA_MED")
 
+# Marcadores no index.html
 START = "// DADOS_START"
 END   = "// DADOS_END"
 
 if START not in html or END not in html:
-    print("ERRO: marcadores DADOS_START/END nao encontrados"); sys.exit(1)
+    print("ERRO: marcadores DADOS_START / DADOS_END nao encontrados no index.html")
+    print("Primeiros marcadores encontrados:")
+    for m in ["// DADOS", "// ═══", "// AUTH"]:
+        idx = html.find(m)
+        if idx > 0: print(f"  '{m}' em pos {idx}")
+    sys.exit(1)
 
-ts = p.get("timestamp","desconhecido")
+ts = p.get("timestamp", "desconhecido")
 
 partes = [
     START, "\n",
@@ -58,9 +65,10 @@ s = html.find(START)
 e = html.find(END)
 html = html[:s] + novo_bloco + "\n" + html[e:]
 
+# Atualizar badge e hdata com timestamp
 html = re.sub(
     r'id="badge-update">[^<]+<',
-    'id="badge-update">Atualizado: ' + ts + '<',
+    'id="badge-update">' + chr(10010) + ' Atualizado: ' + ts + '<',
     html, count=1
 )
 html = re.sub(
@@ -72,21 +80,26 @@ html = re.sub(
 print("HTML: {:,} chars".format(len(html)))
 Path("index.html").write_text(html, encoding="utf-8")
 
+# Push para GitHub
 content_b64 = base64.b64encode(html.encode()).decode()
 req = urllib.request.Request(
     "https://api.github.com/repos/" + REPO + "/contents/index.html",
-    headers={"Authorization": "token " + TOKEN, "Accept": "application/vnd.github+json"}
+    headers={"Authorization": "token " + TOKEN,
+             "Accept": "application/vnd.github+json"}
 )
 with urllib.request.urlopen(req) as r:
     sha = json.loads(r.read())["sha"]
 
-payload_data = json.dumps({
+body = json.dumps({
     "message": "Atualizado BI GEJA — " + ts,
-    "content": content_b64, "sha": sha, "branch": "main"
+    "content": content_b64,
+    "sha": sha,
+    "branch": "main"
 }).encode()
+
 req2 = urllib.request.Request(
     "https://api.github.com/repos/" + REPO + "/contents/index.html",
-    data=payload_data,
+    data=body,
     headers={"Authorization": "token " + TOKEN,
              "Content-Type": "application/json",
              "Accept": "application/vnd.github+json"},
@@ -94,5 +107,7 @@ req2 = urllib.request.Request(
 )
 with urllib.request.urlopen(req2) as r:
     resp = json.loads(r.read())
+
 print("Push OK! Commit: " + resp["commit"]["sha"][:12])
+print("Site: https://chefebuzz.github.io/geja-bi/")
 print("PUSH OK")

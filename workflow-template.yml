@@ -1,0 +1,33 @@
+name: Atualizar BI GEJA
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # 05:00 UTC = 02:00 BRT
+  workflow_dispatch:        # Permite rodar manualmente
+
+jobs:
+  update-bi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install gspread google-auth cryptography -q
+
+      - name: Buscar dados e gerar BI
+        env:
+          GEJA_SA_KEY: ${{ secrets.GEJA_SA_KEY }}
+        run: python build_bi.py
+
+      - name: Publicar BI atualizado
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python push_bi.py

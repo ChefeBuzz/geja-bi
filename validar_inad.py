@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Lê a aba Dados Médicos (PAXTU) e identifica quem precisa de cada campo
-marcado na pulseira amarela:
-  1. ALERGIA a picadas
+Gera relação nominal para pulseiras do acampamento:
+  1. ALERGIA a picadas de inseto
   2. ALERGIA a medicamentos
   3. REMÉDIO CONTÍNUO
   4. RESTRIÇÃO ALIMENTAR
+Agrupado por: nos 4, nos 3, nos 2, nos 1 (qual).
 """
 import json, os, base64, urllib.request
 from google.oauth2.service_account import Credentials
@@ -21,45 +21,24 @@ creds = Credentials.from_service_account_info(sa_info, scopes=SCOPES)
 gc    = gspread.authorize(creds)
 sh    = gc.open_by_key(SHEET_ID)
 
-# Listar todas as abas disponíveis
-abas = [ws.title for ws in sh.worksheets()]
-print("Abas disponíveis:", abas)
+# ── Ler aba Dados Médicos ──────────────────────────────────────
+ws   = sh.worksheet("Dados Médicos")
+rows = ws.get_all_values()
 
-# Tentar ler aba de dados médicos
-aba_med = None
-for candidato in ["Dados Médicos", "Dados Medicos", "PAXTU", "Médico", "Medico", "Ficha"]:
-    if candidato in abas:
-        aba_med = candidato
-        break
+# Mapear cabeçalhos
+headers = rows[0] if rows else []
+print("Total linhas:", len(rows))
+print("Cabeçalhos:")
+for i, h in enumerate(headers):
+    print(f"  col {i:3d}: '{h}'")
 
-if not aba_med:
-    # Usar aba principal e buscar colunas médicas
-    print("Aba médica não encontrada — usando aba principal")
-    ws = sh.worksheet("Dados (2025 - 2026)")
-    rows = ws.get_all_values()
-    headers = rows[2]
-    print("\nColunas com dados médicos (alergia, remédio, restrição):")
-    for i, h in enumerate(headers):
-        hl = h.lower()
-        if any(k in hl for k in ['alergia','remédio','remedio','restrição','restricao','medicament','piçad','picad','aliment']):
-            vals = [str(r[i]).strip() for r in rows[3:] if i < len(r) and str(r[i]).strip() not in ('','—','-')]
-            print(f"  col {i:3d}: '{h}' — {len(vals)} preenchidas")
-            if vals: print(f"           ex: {vals[:3]}")
-else:
-    print(f"Aba médica encontrada: '{aba_med}'")
-    ws  = sh.worksheet(aba_med)
-    rows = ws.get_all_values()
-    print(f"Linhas: {len(rows)}")
-    print("Cabeçalhos (primeiras 30 colunas):")
-    if rows:
-        for i, h in enumerate(rows[0][:30]):
-            print(f"  col {i:2d}: '{h}'")
-    print("\nPrimeiras 3 linhas de dados:")
-    for row in rows[1:4]:
-        print(row[:15])
+# Salvar cabeçalhos para análise
+result = {
+    "total_linhas": len(rows),
+    "headers": {str(i): h for i, h in enumerate(headers)},
+    "amostra": [rows[r][:20] for r in range(1, min(6, len(rows)))]
+}
 
-# Salvar resultado preliminar
-result = {"abas": abas, "aba_medica": aba_med}
 content_b64 = base64.b64encode(json.dumps(result, ensure_ascii=False, indent=2).encode()).decode()
 sha = None
 try:
@@ -70,7 +49,7 @@ try:
     with urllib.request.urlopen(req) as r:
         sha = json.loads(r.read()).get("sha")
 except: pass
-body = {"message": "pulseira diag", "content": content_b64, "branch": "main"}
+body = {"message": "headers Dados Medicos", "content": content_b64, "branch": "main"}
 if sha: body["sha"] = sha
 req2 = urllib.request.Request(
     f"https://api.github.com/repos/{REPO}/contents/validacao_resultado.json",

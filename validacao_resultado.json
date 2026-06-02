@@ -1,1733 +1,1186 @@
 {
-  "total": 246,
-  "nos4": [
-    {
-      "nome": "GUSTAVO DE FREITAS MEDEIROS",
-      "campos": "PICADAS+MED.ALERGIA+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: FORMIGA / ARANHA; Medicamentos: ALIVIUM; Alimentos: Lactose",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "LACTOSE (Toma remédio antes de consumir)"
-    }
-  ],
+  "total": 111,
+  "nos4": [],
   "nos3": [
     {
       "nome": "EMANUELA BATISTA PONTE",
-      "campos": "PICADAS+MED.ALERGIA+REMÉDIO",
-      "alergias": "Picada de inseto: Pernilongo e abelha; Medicamentos: Plasil, Dramin e AAS; Outro: Mofo, ácaros, exposição longa ao ar condicionado, parabenos, lanolina, ureia, ácido sórbico",
-      "remedio": "Ansitec 10mg S Lamotrigina 100mg S Omeprazol 20 ou 40 mg S Puran T4 125 mg S Sertralina 100mg S",
-      "restricao": "Não"
+      "qtd": 3,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "ALERGIA A MEDICAMENTOS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Pernilongo e abelha; Medicamentos: Plasil, Drami",
+        "Alergia med: Medicamentos: Plasil, Dramin e AAS; Outro: Mofo, ácaros, exp",
+        "Remedio: Ansitec 10mg S Lamotrigina 100mg S Omeprazol 20 ou 40 mg S P"
+      ]
     },
     {
-      "nome": "ENZO NERY BASTOS",
-      "campos": "MED.ALERGIA+REMÉDIO+RESTRICAO",
-      "alergias": "Medicamentos: G6PD - NÃO PODE OS QUE TEM CORANTE; Alimentos: G6PD - NÃO PODE CORANTE ARTIFICIAL",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "G6PD - NÃO PODE CORANTE ARTIFICIAL E FAVA"
-    },
-    {
-      "nome": "FELIPE DA COSTA NORBERTO DE SOUZA",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: PÊLO DE GATO; Ácaros / tapetes: ALERGIA NO CONTATO CONTÍNUO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "LEITE"
-    },
-    {
-      "nome": "GABRIEL MOREIRA DE SOUZA",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: NORMALMENTE FICA BEM INCHADO NO LOCAL DA PICADA; Alimentos: TILÁPIA",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "TILÁPIA"
-    },
-    {
-      "nome": "GIOVANA NAZARETH DONADON",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: ÀS VEZES; Alimentos: LEITE",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "LEITE (PURO, CREME DE LEITE, IOGURTE)"
-    },
-    {
-      "nome": "Isabella Mattos Amorim",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: abelhas, marimbondo; Outro: Dermatite Atópica; Alimentos: Camarão",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "camarão"
-    },
-    {
-      "nome": "JOSE LEITE CARNEIRO JUNIOR",
-      "campos": "MED.ALERGIA+REMÉDIO+RESTRICAO",
-      "alergias": "Medicamentos: dipirona",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "lactose"
-    },
-    {
-      "nome": "JOÃO DE CARVALHO MACHADO",
-      "campos": "MED.ALERGIA+REMÉDIO+RESTRICAO",
-      "alergias": "Ácaros / tapetes: Rinite alérgica; Medicamentos: Dipirona INFANTIL (corante usado); Alimentos: Camarão (alergia grave)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Camarão (alergia grave)"
-    },
-    {
-      "nome": "KAUÃ MARÇAL ARAUJO ELIAS DE ALMEIDA",
-      "campos": "PICADAS+MED.ALERGIA+REMÉDIO",
-      "alergias": "Picada de inseto: Picadas de mosquito causam vermelhidão e bolhas; Ácaros / tapetes: Poeira causa espirros constantes e congestão nasal; Medicamentos: PENICILINA; Outro: RINITE ALÉRGICA",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MARIANA JUNQUEIRA MARINI",
-      "campos": "PICADAS+MED.ALERGIA+REMÉDIO",
-      "alergias": "Picada de inseto: Formiga; Ácaros / tapetes: Ácaro; Medicamentos: Dipirona",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "GUSTAVO DE FREITAS MEDEIROS",
+      "qtd": 3,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "ALERGIA A MEDICAMENTOS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: FORMIGA / ARANHA; Medicamentos: ALIVIUM; Aliment",
+        "Alergia med: Medicamentos: ALIVIUM; Alimentos: Lactose",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "MATEUS JUNQUEIRA MARINI",
-      "campos": "PICADAS+MED.ALERGIA+REMÉDIO",
-      "alergias": "Picada de inseto: Abelha, vespa, marimbondo, formiga; Ácaros / tapetes; Medicamentos: Dipirona",
-      "remedio": "Alenia S 1 caps a noite Aristab S 3 ml a noite Atentah S 1 cp de manhã",
-      "restricao": "Não"
+      "qtd": 3,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "ALERGIA A MEDICAMENTOS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Abelha, vespa, marimbondo, formiga; Ácaros / tap",
+        "Alergia med: Medicamentos: Dipirona",
+        "Remedio: Alenia S 1 caps a noite Aristab S 3 ml a noite Atentah S 1 c"
+      ]
     },
     {
       "nome": "Maria Júlia Ayane Gonçalves Fleming Terada",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: Formigas, pernilongos; Ácaros / tapetes: Poeira; Alimentos: Oleaginosas",
-      "remedio": "Aerolin N Usa medicamento somente em crises. Bombinha S",
-      "restricao": "Oleaginosas"
-    },
-    {
-      "nome": "NICOLAS DE PAIVA VASCONCELOS",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: ABELHAS; Ácaros / tapetes: POEIRAS EM GERAL; Fungos: MOFOS EM GERAL; Alimentos: Kiwi",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Kiwi"
-    },
-    {
-      "nome": "Pedro Kindel Leitão",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: Vespas e abelhas; Alimentos: Queijo",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não come queijo."
-    },
-    {
-      "nome": "RODRIGO HANAZUMI BRAGGIO",
-      "campos": "PICADAS+MED.ALERGIA+REMÉDIO",
-      "alergias": "Picada de inseto: abelhas (remédio: Stramonium e pomada de apis); Outro: RINITE ALÉRGICA. ÀS VEZES FICA COM O NARIZ ENTUPIDO. RESPIRA PELA BOCA.",
-      "remedio": "Stramonium N",
-      "restricao": "Não"
+      "qtd": 3,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Formigas, pernilongos; Ácaros / tapetes: Poeira;",
+        "Remedio: Aerolin N Usa medicamento somente em crises. Bombinha",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "Theo Lopes Noda",
-      "campos": "PICADAS+REMÉDIO+RESTRICAO",
-      "alergias": "Picada de inseto: Costuma ter reação alérgica à picada de insetos; Ácaros / tapetes: Alergia respiratória; Outro: Poeira",
-      "remedio": "Risperidona S",
-      "restricao": "Não aceita e tem náuseas/vômito com ovo - só ovo, mas não a alimentos com ovo na base, como bolo, por exemplo"
+      "qtd": 3,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Costuma ter reação alérgica à picada de insetos;",
+        "Remedio: Risperidona",
+        "Restricao: Sim"
+      ]
     }
   ],
   "nos2": [
     {
-      "nome": "ALEXANDRE TEIXEIRA DE MOURA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Alimentos: LEITE",
-      "remedio": "AEROLIN N ANTIALÉRGICO N DIPIRONA N LACTASE N",
-      "restricao": "LEITE"
-    },
-    {
-      "nome": "ANA JÚLIA DE OLIVEIRA SANTOS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: PELE; Ácaros / tapetes: RINITE",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
       "nome": "ANA MARíA PALACIOS DíAZ",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: SULFAS",
-      "remedio": "Eutirox S Para tratamento do hipotiroidismo",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ANDRE LUIZ DE ARAUJO SANTOS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: MUITO SÉRIO, DE FICAR TODO INCHADO.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: SULFAS",
+        "Remedio: Eutirox S Para tratamento do hipotiroidismo"
+      ]
     },
     {
       "nome": "ANDRÉA CHOI BRAGA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: PICADA DE INSETOS; Outro: ÁCAROS,",
-      "remedio": "GH S",
-      "restricao": "Não"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: PICADA DE INSETOS; Outro: ÁCAROS,",
+        "Remedio: GH"
+      ]
     },
     {
       "nome": "ANGELINA GASTALDI DE CASTRO",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: COSTUMA PASSAR CREME FENERGAN OU SIMILIAR",
-      "remedio": "Alurax S tomar às 19:30",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ARTHUR CAVALCANTE NEVES",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: picada de abelha, marimbondo",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: COSTUMA PASSAR CREME FENERGAN OU SIMILIAR",
+        "Remedio: Alurax S tomar às 19:30"
+      ]
     },
     {
       "nome": "ARTHUR DA SILVA COSTA DIAS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: DIVERSOS; Outro: POEIRA",
-      "remedio": "LACRIFILM N LUBRIFICANTE OCULAR PATANOL N SOMENTE EM CASO DE ALERGIAS",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ARTHUR NERY PINHEIRO",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "ABÓBORA E BRÓCOLIS"
-    },
-    {
-      "nome": "ARTUR AGUIAR CARDOSO",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Vegetariano"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: DIVERSOS; Outro: POEIRA",
+        "Remedio: LACRIFILM N LUBRIFICANTE OCULAR PATANOL N SOMENTE EM CASO DE"
+      ]
     },
     {
       "nome": "BENTO JOSÉ DE ASSUNÇÃO PONCIANO",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: Asma, dermatite atópica; Alimentos: Ovo, leite e açafrão",
-      "remedio": "AEROLIN S",
-      "restricao": "LEITE, OVO, CURCUMA/AÇAFRÃO"
+      "qtd": 2,
+      "campos": [
+        "REMEDIO CONTINUO",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Remedio: AEROLIN",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "CAROLINA BARROSO ALVES",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Inzelm S Remédio para refluxo gastroesofágico Siblima S Anticoncepcional",
-      "restricao": "Intolerância a lactose"
+      "qtd": 2,
+      "campos": [
+        "REMEDIO CONTINUO",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Remedio: Inzelm S Remédio para refluxo gastroesofágico Siblima S Anti",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "CAROLINA FERREIRA RACANELLI DE FREITAS",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: s Problemas DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "DEPAKENE S PREDSIN N",
-      "restricao": "Não pode com alimentos com muito sal"
+      "nome": "ENZO NERY BASTOS",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: G6PD - NÃO PODE OS QUE TEM CORANTE; Alimentos:",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "CLARA RODRIGUES ALVES COSTA D'ABADIA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: muriçoca/pernilongo e formiga",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Cael Martins Miranda Cheliga",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: pomada antialérgica e alegra; Ácaros / tapetes: alegra; Fungos: alegra",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Cecília Cantieri Taube da Conceição",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Laticínio"
-    },
-    {
-      "nome": "DAVI ASSIS CARDOSO ALVES",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: PICADA DE INSETO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "DAVI VAZ PEREIRA FARIA DA PENHA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: PICADA DE INSETOS, NÃO TEM ALERGIAS",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ENZO FERREIRA DE SOUZA",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: DIPIRONA; Alimentos: CAMARÃO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ESTELA NAZARETH DONADON",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: s Problemas DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "LEITE PURO OU IOGURTE, DEMAIS DERIVADOS PODE."
-    },
-    {
-      "nome": "GABRIEL BARBOSA BRAUN CHAVES",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: IBUPROFENO; Outro: ÁCAROS,; Alimentos: Carne de porco",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "FELIPE DA COSTA NORBERTO DE SOUZA",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: PÊLO DE GATO; Ácaros / tapetes: ALERGIA NO CONTA",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "GABRIEL BRAGA SCHERER DE SOUZA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: lesões na pele; Ácaros / tapetes: problemas respiratórios; Fungos: problemas respiratórios; Outro: s Problemas Rinite DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "DUPIXENT S INJEÇÃO DE 14/14DIAS RINVOQ S 1 COMP 12/12HS PANTOPRAZOL S 1 COMP AO DIA EM JEJUM SERETIDE S 2 JATOS 2X DIA CLENIL S SOS CRISE - 1 JATO APOS AEROLIN AEROLIN S SOS CRISE - 4 JATOS INTERCALADOS POR SEGUNDOS NASONEX S 2 JATOS NARIZ 2X DIA SERTRALINA S 1 COMP AO DIA",
-      "restricao": "Não"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: lesões na pele; Ácaros / tapetes: problemas resp",
+        "Remedio: DUPIXENT S INJEÇÃO DE 14/14DIAS RINVOQ S 1 COMP 12/12HS PANT"
+      ]
+    },
+    {
+      "nome": "GABRIEL MOREIRA DE SOUZA",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: NORMALMENTE FICA BEM INCHADO NO LOCAL DA PICADA;",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "GABRIEL PINHEIRO RAMOS DE CASTRO",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Burrachudo, insetos em geral.",
-      "remedio": "Roacutan S Usa 2 vezes na semana S",
-      "restricao": "Não"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Burrachudo, insetos em geral.",
+        "Remedio: Roacutan S Usa 2 vezes na semana"
+      ]
     },
     {
-      "nome": "GABRIELA GUANAIS LITRAN DE ANDRADE",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Mosquito em articulações",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "GLECIA CARLA ROCHA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Ácaros / tapetes: ÁCARO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "NÃO COME CARNE"
-    },
-    {
-      "nome": "GUILHERME DE AZAMBUJA VILLANOVA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Carne de Porco, Laticínios,Glúten"
+      "nome": "GIOVANA NAZARETH DONADON",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: ÀS VEZES; Alimentos: LEITE",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "GUSTAVO MONTENEGRO GENERINO DE ANDRADE",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Alimentos: CAMARÃO E FRUTOS DO MAR",
-      "remedio": "Insulina rápida S Antes das principais refeições Insulina de longa duração S 1 vez ao dia",
-      "restricao": "CAMARÃO E FRUTOS DO MAR"
+      "qtd": 2,
+      "campos": [
+        "REMEDIO CONTINUO",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Remedio: Insulina rápida S Antes das principais refeições Insulina de",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "HEITOR MORIÁ DE OLIVEIRA CORBAL",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: RINITE ALÉRGICA; Alimentos: Leite e derivados, carne suína.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Leite e derivados, carne suína."
+      "nome": "Isabella Mattos Amorim",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: abelhas, marimbondo; Outro: Dermatite Atópica; A",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "IVAN MOREIRA SANTOS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: PICADA DE INSETO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "JOSE LEITE CARNEIRO JUNIOR",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: dipirona",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "JOAO LUCAS DE PAIVA VASCONCELOS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Abelhas; Ácaros / tapetes: POEIRAS EM GERAL",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "JOÃO DE CARVALHO MACHADO",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: Dipirona INFANTIL (corante usado); Alimentos:",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "JOAQUIM SANTOS RECH",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: GERALMENTE MINISTRAMOS DESLORATADINA.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "JOÃO PONCIANO PORTUGAL",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Alimentos: proteína do leite de vaca, batata inglesa, banana, laranja e açaí.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "proteína do leite de vaca, batata inglesa, banana, laranja e açaí."
-    },
-    {
-      "nome": "JOÃO ROCHA DE SOUZA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: DIVERSOS",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "KAUÃ MARÇAL ARAUJO ELIAS DE ALMEIDA",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Picada: de inseto:",
+        "Alergia med: Medicamentos: PENICILINA; Outro: RINITE ALÉRGICA"
+      ]
     },
     {
       "nome": "KELLI ANGELA DE FREITAS",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Alimentos: Corante Amarelo, Soja, Amendoim",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Glútem, Soja"
-    },
-    {
-      "nome": "LAURA BRAGA SCHERER DE SOUZA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LAURA MACEDO DA SILVA TAKEUCHI",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "SALSICHAS"
-    },
-    {
-      "nome": "LIDIA COSMO DE BARROS",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "LACTOSE"
-    },
-    {
-      "nome": "LORENZO ANASCO MURAVEC",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: ABELHA",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUAN NERY BASTOS",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: G6PD NÃO PODE INGERIR MEDICAÇÃO COM CORANTE ARTIFICIAL; Alimentos: POSSUI G6PD OU SEJA NÃO PODE INGERIR ALIMENTOS COM CORANTE ARTIFICIAL E NEM FAVA.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUCAS RESENDE IBITURUNA",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Abelhas",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUÍZA GUIMARÃES BORGES TEIXEIRA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "CARNES DE ORIGEM ANIMAL - OVOLACTOVEGETARIANA"
-    },
-    {
-      "nome": "Laura Lopes de Mello",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Formigas; Ácaros / tapetes: Poeira; Outro: Saliva (pêlos) de gatos e cachorros, mas apenas para contato nos olhos ou próximo.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MAHIRI MORENA SOUSA ABREU",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: TENDE A INCHAR E COÇAR BASTANTE; Ácaros / tapetes: NARIZ ENTOPE; Fungos: NARIZ ENTOPE E ESPIRRA MUITO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MAITÊ DE PAIVA LEÃO",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Carne Vermelha"
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Alergia med: Alimentos: Corante Amarelo, Soja, Amendoim",
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "MARCUS VINICIUS RIBEIRO LIMA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: POEIRA",
-      "remedio": "ESC 20mg S QUET XR S VASOPRIL S VITAMINA COMPLEMENTAR DEVIDO CIRURGIA BARIÁTRICA S",
-      "restricao": "LEITE E DERIVADOS"
+      "qtd": 2,
+      "campos": [
+        "REMEDIO CONTINUO",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Remedio: ESC 20mg S QUET XR S VASOPRIL S VITAMINA COMPLEMENTAR DEVIDO",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "MARIA FLOR MOURA MAZZARO",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: NORMAL; Ácaros / tapetes: NORMAL; Fungos: NORMAL",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "MARIANA JUNQUEIRA MARINI",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Formiga; Ácaros / tapetes: Ácaro; Medicamentos:",
+        "Alergia med: Medicamentos: Dipirona"
+      ]
     },
     {
-      "nome": "MARINA MARTINS COLARES CARLOS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Não informado; Outro: ACAROS",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "NICOLAS DE PAIVA VASCONCELOS",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: ABELHAS; Ácaros / tapetes: POEIRAS EM GERAL; Fun",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "MATEUS MARTINS COLARES CARLOS",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Não informado",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Pedro Kindel Leitão",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Vespas e abelhas; Alimentos: Queijo",
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "MATHEUS FEITOSA CARNEIRO",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MAURO SÉRGIO CAPARELLI DE CASTRO",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Ácaros / tapetes: POEIRA; Fungos: COISAS GUARDADAS HÁ MUITO TEMPO; Medicamentos: ANTIBIÓTICO KEFLEX",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MIGUEL BORGES LAGO",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: Utilizar pomadas com corticóide; Outro: s Problemas DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Matheus Yuzuru Torisu Amorim",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não gosta de queijo/manteiga/requeijão."
-    },
-    {
-      "nome": "Mila Crispim Feitosa",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: abelha (mas a alergia é leve); Outro: s Problemas não possui medicação DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "NATÁLIA MIDORI SHIRADO TOKUY",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: POEIRA, ACARO, PÊLO DE GATO; Alimentos: PEIXE (DE TRANCAR A GLOTE)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "ALERGIA A PEIXE"
-    },
-    {
-      "nome": "OLÍVIA BARBOSA BRAUN CHAVES",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Alimentos: FRUTOS DO MAR/ MARISCOS",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "FRUTOS DO MAR"
-    },
-    {
-      "nome": "PAULA REGINA M GENERINO",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: Ácido acetil salicílico e penicilina e derivados, tilatil e Tramal.; Outro: s Problemas Fibrilação atrial, hérnia de disco, endometriose. DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "Sotalol, Cerazette, apixabana N",
-      "restricao": "Não"
-    },
-    {
-      "nome": "PEDRO HENRIQUE ANDREOLI LUMINATI",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: Dipirona",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "RAFAELA ANGELO TARABOSSI",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Sou vegetariana"
-    },
-    {
-      "nome": "RAFAHELA GARCIA BAZZANELLA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: DERMATITE DE CONTATO, PELOS, POLEN",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "NÃO COME CARNE, MAS COME OVO E DERIVADOS DE LEITE."
-    },
-    {
-      "nome": "RODRIGO BAZZANELLA FERRI",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "Outro: ÁCAROS, ASMA,",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "NÃO COME CARNE, MAS COME OVO E DERIVADOS DE LEITE."
-    },
-    {
-      "nome": "RODRIGO DE SÁ CARVALHO",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: IBUPROFENO; Outro: FARINGITE POR CHOQUE TÉRMICO.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Raul Gomes Ledo Rodrigues",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Medicamentos: Amoxicilina",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "SAMUEL VAZ PEREIRA FARIA DA PENHA",
-      "campos": "REMÉDIO+RESTRICAO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Vegetariano"
-    },
-    {
-      "nome": "Victor Hugo Souto Lemes",
-      "campos": "MED.ALERGIA+REMÉDIO",
-      "alergias": "Ácaros / tapetes: Alergia a ácaros; Fungos: Alergia a fungos; Medicamentos: Dipirona",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ÁRTUR FARIA LEAL",
-      "campos": "PICADAS+REMÉDIO",
-      "alergias": "Picada de inseto: ABELHA",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "RODRIGO HANAZUMI BRAGGIO",
+      "qtd": 2,
+      "campos": [
+        "ALERGIA A PICADAS",
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: abelhas (remédio: Stramonium e pomada de apis);",
+        "Alergia med: Picada de inseto: abelhas (remédio: Stramonium e pomada de a"
+      ]
     }
   ],
   "nos1": [
     {
-      "nome": "ALEXANDRE AUGUSTO COSTA PONCIANO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ALICE DA VEIGA COELHO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ALICE SANABRE SEBBA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ALICE SENA MAMEDE",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ALINE TROVÃO BARBALHO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "AMANDA MARQUES MARTINS PEREIRA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ALEXANDRE TEIXEIRA DE MOURA",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "AMANDA NEVES MADURO ALVES",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: POEIRA",
-      "remedio": "ATTENTAH S 1 COMP PELA MANHÃ",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: ATTENTAH S 1 COMP PELA MANHÃ"
+      ]
     },
     {
-      "nome": "ANA CLARA AUGUSTO CAPARROZ",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ANA JÚLIA DE OLIVEIRA SANTOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: PELE; Ácaros / tapetes: RINITE"
+      ]
+    },
+    {
+      "nome": "ANDRE LUIZ DE ARAUJO SANTOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: MUITO SÉRIO, DE FICAR TODO INCHADO."
+      ]
     },
     {
       "nome": "ANDRÉ DE CONTI SCHITKOSKI",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: ÁCAROS",
-      "remedio": "HOMEOPATIA S",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: HOMEOPATIA"
+      ]
     },
     {
-      "nome": "ANDRÉ LUIZ SOUZA DE ANDRADE GENERINO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ARTHUR CAVALCANTE NEVES",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: picada de abelha, marimbondo"
+      ]
     },
     {
-      "nome": "ANNA CECíLIA FRANçA CRISPIM",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ANTONIO GASTALDI DE CASTRO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ARTHUR BICALHO FRAZÃO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ARTHUR FERREIRA RACANELLI DE FREITAS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ARTHUR RIBEIRO DE QUEIROZ",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ARTHUR NERY PINHEIRO",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "ARTHUR RIGOTTI SOUSA NASCIMENTO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "ANTIDEPRESSIVOS S",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: ANTIDEPRESSIVOS"
+      ]
     },
     {
-      "nome": "ARTUR DUARTE MOREIRA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Arthur Galvão Kimo Vasconcelos Lima",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: alergia leve, com sinais leves respiratórios (espi",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Aurélio Caitano D’Hollanda",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "BEATRIZ GONÇALVES BRITO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ARTUR AGUIAR CARDOSO",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "BEATRIZ NEVES MADURO ALVES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "ARISTAB S PARA DEPRESSÃO",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: ARISTAB S PARA DEPRESSÃO"
+      ]
     },
     {
       "nome": "BENTO PEREIRA RIBEIRO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "IBUPROFENO N FEBRE",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: IBUPROFENO N FEBRE"
+      ]
     },
     {
-      "nome": "BERNARDO CRISPIM FEITOSA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "CAROLINA FERREIRA RACANELLI DE FREITAS",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "BERNARDO MAZZARO GELENSKE",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "CLARA RODRIGUES ALVES COSTA D'ABADIA",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: muriçoca/pernilongo e formiga"
+      ]
     },
     {
-      "nome": "Benício Nobre de Almeida",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CAIMI MARTINS MIRANDA CHELIGA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CAMILA ALVES COSTA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CLARA SANTERO PONTES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CLARICE FERREIRA DE SOUSA ROCHA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CLAUDIO JOSE DE BARROS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CONSUELO ADUKE MENEZES REIS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "CRISTHIAN DE AZAMBUJA VILLANOVA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Cael Martins Miranda Cheliga",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: pomada antialérgica e alegra; Ácaros / tapetes:"
+      ]
     },
     {
       "nome": "Caio Macedo Guimarães",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Dipirona N para crises de Enxaqueca Ibuprofeno N para crises de Enxaqueca Paracetamol N para crises de Enxaqueca",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Dipirona N para crises de Enxaqueca Ibuprofeno N para crises"
+      ]
     },
     {
-      "nome": "Carolina Salvador Martinez",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Chloé Delamare Mesquita Queiroz Sena",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Cecília Cantieri Taube da Conceição",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "DANIELLA REBELO DOS SANTOS CHAVES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "BENICAR ANGLO S METFORMINA S",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: BENICAR ANGLO S METFORMINA"
+      ]
     },
     {
-      "nome": "DHONNY BATISTA MARTINS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "DAVI ASSIS CARDOSO ALVES",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: PICADA DE INSETO"
+      ]
     },
     {
-      "nome": "Daniel Leite Mergulhão",
-      "campos": "REMÉDIO",
-      "alergias": "Fungos: Rinite",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "DAVI VAZ PEREIRA FARIA DA PENHA",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: PICADA DE INSETOS, NÃO TEM ALERGIAS"
+      ]
     },
     {
       "nome": "Davi Campos Lyrio",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Aristab S 10mg 1 comprimido 2x ao dia manhã e noite Atensina S 0,10mg 1comprimido 2x ao dia manhã e noite Atentah S 40mg 1 comprimido manhã",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Aristab S 10mg 1 comprimido 2x ao dia manhã e noite Atensina"
+      ]
     },
     {
       "nome": "EDUARDO MONTENEGRO GENERINO DE ANDRADE",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Puran T4 S 1 comp por dia Concerta 36 mg S 1 comp por dia",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Puran T4 S 1 comp por dia Concerta 36 mg S 1 comp por dia"
+      ]
     },
     {
-      "nome": "ELISA SALES LOPES MENDES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ENZO FERREIRA DE SOUZA",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: DIPIRONA; Alimentos: CAMARÃO"
+      ]
     },
     {
-      "nome": "ERIC LUIZ RODRIGUES DE FRANÇA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "EZEQUIEL RIBEIRO SMARZARO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ESTELA NAZARETH DONADON",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "Emiliany Costa Almeida",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: Corante; em investigação",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Outro: Corante; em investigação"
+      ]
     },
     {
-      "nome": "FELIPE REINATO AVELINO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "GABRIEL BARBOSA BRAUN CHAVES",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: IBUPROFENO; Outro: ÁCAROS,; Alimentos: Carne d"
+      ]
     },
     {
-      "nome": "FELIPE VENSON RAFFAELLI",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "FILIPE AUGUSTO NOBRE SILVA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "FRANCISCO BERGAMASCHI LIRA SILVA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "FRANCISCO PONCIANO PORTUGAL",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "GABRIEL FRANCO RODRIGUES DA CUNHA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "GABRIEL LARA CAMARGOS LAMARCHE",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: POEIRA / ÁCARO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "GABRIELA NASCIMENTO PAVANELLI",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "GABRIELLA JONAS PALACIOS",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: s Problemas DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "GABRIELA GUANAIS LITRAN DE ANDRADE",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Mosquito em articulações"
+      ]
     },
     {
       "nome": "GABRIELLE DE ASSIS ROCHA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "BUCLINA S TOMAR DE NOITE DEPOIS DO JANTAR",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: BUCLINA S TOMAR DE NOITE DEPOIS DO JANTAR"
+      ]
     },
     {
-      "nome": "GIOVANNA FERNANDES PONCIANO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "GLECIA CARLA ROCHA",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "GRACO MELO SANTOS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "LEVOTIROXINA SÓDICA 88MCG S TRATAMENTO TIREÓIDE ROSUVASTATINA 5MG S PREVENTIVO",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: LEVOTIROXINA SÓDICA 88MCG S TRATAMENTO TIREÓIDE ROSUVASTATIN"
+      ]
+    },
+    {
+      "nome": "GUILHERME DE AZAMBUJA VILLANOVA",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "GUILHERME FERNANDES PONCIANO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Somatropina S Hormônio de crescimento.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Somatropina S Hormônio de crescimento."
+      ]
     },
     {
-      "nome": "GUSTAVO TABARI MESQUITA BARBOSA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Giovanna Moura Mazzaro",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HEITOR ARAÚJO EUZEBIO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HEITOR MACHADO SANTOS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HEITOR SANTOS SILVEIRA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HELENA MIRANDA MOTA",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: Rinite",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HENRIQUE MAMEDE",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: ÁCAROS",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HENRIQUE MOURA MAZZARO",
-      "campos": "REMÉDIO",
-      "alergias": "Outro",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "HUGO TEIXEIRA MONTEZUMA SALES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Heitor Oliveira Cotta Granato de Castro",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "HEITOR MORIÁ DE OLIVEIRA CORBAL",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "Heitor Vieira Suassuna",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "aerolin S Emergência/resgate (5 pufs se respiração difícil) Combiwave S 1 puf de 12 em 12h Nasonex S Um puf em cada narina à noite",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: aerolin S Emergência/resgate (5 pufs se respiração difícil) "
+      ]
     },
     {
       "nome": "ISAAC CARDOSO PAIÃO CORREIA DE SOUSA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "CONCERTA 36MG S USO SEMPRE PELA MANHÃ",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ISABEL PEREIRA MATOS",
-      "campos": "REMÉDIO",
-      "alergias": "Alimentos: pimenta do reino",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ISABELA KILA ZOZULA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ISADORA BRACK DOTTO BRAND",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: DERMATITE DE CONTATO. MUITO ÁLCOOL EM GEL TEM CAUSADO IRRITAÇÕES EM SUA PELE ATUALMENTE",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: CONCERTA 36MG S USO SEMPRE PELA MANHÃ"
+      ]
     },
     {
       "nome": "ISADORA CORDEIRO DE MORAES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "AEROLIN N HÁ MEDICAMENTO DE USO CONTÍNUO, MAS SÃO FEITOS EM CASA.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: AEROLIN N HÁ MEDICAMENTO DE USO CONTÍNUO, MAS SÃO FEITOS EM "
+      ]
     },
     {
-      "nome": "ITALO RIGOTTI SOUSA NASCIMENTO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "IVAN MOREIRA SANTOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: PICADA DE INSETO"
+      ]
     },
     {
-      "nome": "ITAMAR ALMEIDA DE CARVALHO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "JOAO LUCAS DE PAIVA VASCONCELOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Abelhas; Ácaros / tapetes: POEIRAS EM GERAL"
+      ]
     },
     {
-      "nome": "IZAC ALMEIDA OTÁVIO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "JOAQUIM SANTOS RECH",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: GERALMENTE MINISTRAMOS DESLORATADINA."
+      ]
     },
     {
-      "nome": "JOANA LIMA DE OLIVEIRA LARA",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: SÓ SE FOR EXPOSTA, NADA GRAVE! CAUSA RINITE; Fungos: CAUSA RINITE",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "JOÃO PONCIANO PORTUGAL",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "JOÃO GUILHERME CARVALHO FERNANDES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "JOÃO ROCHA DE SOUZA",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: DIVERSOS"
+      ]
     },
     {
-      "nome": "JOÃO KRETTLI TRINDADE",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LAURA BRAGA SCHERER DE SOUZA",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto"
+      ]
     },
     {
-      "nome": "JOÃO PEDRO MARTINS FRANÇA",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: RINITE ALÉRGICA",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LAURA MACEDO DA SILVA TAKEUCHI",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "JOÃO TABARI MESQUITA BARBOSA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LIDIA COSMO DE BARROS",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "JOãO VICTOR DE LORENZO MANOEL",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LORENZO ANASCO MURAVEC",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: ABELHA"
+      ]
     },
     {
-      "nome": "JULIA BARREIRA DE CARVALHO",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: Ácaro",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LUAN NERY BASTOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: G6PD NÃO PODE INGERIR MEDICAÇÃO COM CORANTE AR"
+      ]
     },
     {
-      "nome": "JULIA LARISSA ALVES DO PRADO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LUCAS RESENDE IBITURUNA",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Abelhas"
+      ]
     },
     {
-      "nome": "JULIO CEZAR SANTOS EMERICH",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "LUÍZA GUIMARÃES BORGES TEIXEIRA",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "João Victor Amaral de Almeida",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Laura Lopes de Mello",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Formigas; Ácaros / tapetes: Poeira; Outro: Saliv"
+      ]
     },
     {
-      "nome": "Julia Linhares Alvarenga",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "MAHIRI MORENA SOUSA ABREU",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: TENDE A INCHAR E COÇAR BASTANTE; Ácaros / tapete"
+      ]
     },
     {
-      "nome": "JÚLIA EMMENDOERFER NAVARRO",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: ACAROS e RINITE ALÉRGICA",
-      "remedio": "anticoncepcional N",
-      "restricao": "Não"
-    },
-    {
-      "nome": "KIRA POPOV CUSTÓDIO CASTRO SOUZA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LAURA DE SOUZA LIMA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LAURA MACHADO SOARES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LAURA SENA MAMEDE",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: DERMATITE DE CONTATO",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LEONARDO DA SILVA COSTA DIAS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LEONARDO MAZZARO GELENSKE",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LETICIA MAYUMI SHIRADO TOKUY",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: acaro/ poeira",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LIVIA MARIA RODRIGUES NAZARETH",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LORENA DA COSTA COELHO VERAS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUCAS NAZARENO HALABI",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUIGI FARIA LEAL",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUIS EDUARDO TONELLO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUIS FELIPE DE OLIVEIRA SANTOS",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: RINITE ALÉRGICA, PÊLOS DE ANIMAIS",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUIZA AYAME MARTINS SILVEIRA SIQUEIRA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUZIRLANE DOS SANTOS BARBOSA BRAUN",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "LUÍSA VENSON RAFFAELLI",
-      "campos": "REMÉDIO",
-      "alergias": "Alimentos: Lactose",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Leonardo Tavares Mendonça",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Luan Bonjardim Vaz Costa",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Lucas Perin Kerber",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Luís Felipe Vital Oliveira",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MANUELA LOPES MARTINS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "MAITÊ DE PAIVA LEÃO",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "MARCELO AUGUSTO RHORMENS SAUGUELLIS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Losartana Postassica 50mg S 1 manha e 1 uma noite",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MARCELO ELIAS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Losartana Postassica 50mg S 1 manha e 1 uma noite"
+      ]
     },
     {
       "nome": "MARIA ALICE CHAVES DE CARVALHO",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: CORANTE",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MARIA CECÍLIA CHAVES DE CARVALHO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Outro: CORANTE"
+      ]
     },
     {
       "nome": "MARIA DE QUEIROS CAMPOS RICKLI",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Somatropina S",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Somatropina"
+      ]
     },
     {
-      "nome": "MARIA EDUARDA MAQUINE HORTA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MARIA LAUDINEIA OLIVEIRA NAZARENO HALABI",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MARIANA DE NICOLAE PRADO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "MARIANY COSTA ALMEIDA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "MARIA FLOR MOURA MAZZARO",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: NORMAL; Ácaros / tapetes: NORMAL; Fungos: NORMAL"
+      ]
     },
     {
       "nome": "MARINA LIMA ALVES MONTENEGRO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "TRILEPTAL S 1 COMPRIMIDO 7AM E 1 COMPRIMIDO 19H (7PM)",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: TRILEPTAL S 1 COMPRIMIDO 7AM E 1 COMPRIMIDO 19H (7PM)"
+      ]
     },
     {
-      "nome": "MATEUS FELIPE TONELLO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "MARINA MARTINS COLARES CARLOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Não informado; Outro: ACAROS"
+      ]
     },
     {
-      "nome": "MAYA VIDAL WILLER",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "MATEUS MARTINS COLARES CARLOS",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Não informado"
+      ]
+    },
+    {
+      "nome": "MATHEUS FEITOSA CARNEIRO",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto"
+      ]
+    },
+    {
+      "nome": "MAURO SÉRGIO CAPARELLI DE CASTRO",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: ANTIBIÓTICO KEFLEX"
+      ]
+    },
+    {
+      "nome": "MIGUEL BORGES LAGO",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: Utilizar pomadas com corticóide; Outro: s Proble"
+      ]
     },
     {
       "nome": "Maian Romeiro Marinho",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: Poeiras, mofo",
-      "remedio": "Symbicort Spray S Forma de Controle",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Symbicort Spray S Forma de Controle"
+      ]
     },
     {
-      "nome": "Maria Luiza Linhares Alvarenga",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Matheus Yuzuru Torisu Amorim",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
+    },
+    {
+      "nome": "Mila Crispim Feitosa",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: abelha (mas a alergia é leve); Outro: s Problema"
+      ]
     },
     {
       "nome": "NATHAN VIDAL WILLER",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: Rinite - alergia sazonal",
-      "remedio": "Bronquio dilatador (bombinha aerolim) N Uso eventual, em caso de rinite",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Bronquio dilatador (bombinha aerolim) N Uso eventual, em cas"
+      ]
     },
     {
-      "nome": "Nicole Perin Kerber",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ODIN MIGUEL SOUSA ABREU",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: RINITE ALÉRGICA; Fungos: RINITE ALÉRGICA",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "NATÁLIA MIDORI SHIRADO TOKUY",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "OLIVIA GUADAGNIN MARCONI",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: não testado",
-      "remedio": "Ritalina S 10mg de ritalina, em dia de aula e antes das atividades escoteiras",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Ritalina S 10mg de ritalina, em dia de aula e antes das ativ"
+      ]
     },
     {
-      "nome": "OTÁVIO LOPES MARINHO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "OLÍVIA BARBOSA BRAUN CHAVES",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
+    },
+    {
+      "nome": "PAULA REGINA M GENERINO",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: Ácido acetil salicílico e penicilina e derivad"
+      ]
     },
     {
       "nome": "PEDRO DE CONTI SCHITKOSKI",
-      "campos": "REMÉDIO",
-      "alergias": "Ácaros / tapetes: Medicação (Allegra, Desalex); Outro: Fungo, mofo (Medicação: Allegra, Desalex)",
-      "remedio": "Allegra, Desalex (usa quando em crise) N HOMEOPATIA S",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Allegra, Desalex (usa quando em crise) N HOMEOPATIA"
+      ]
+    },
+    {
+      "nome": "PEDRO HENRIQUE ANDREOLI LUMINATI",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: Dipirona"
+      ]
     },
     {
       "nome": "PEDRO LOPES NODA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "SERTRALINA S 1 CAPSULA AO DIA",
-      "restricao": "Não"
-    },
-    {
-      "nome": "PEDRO MACHADO SOARES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "CORTICOIDE NASAL S DIPIRONA GOTAS N",
-      "restricao": "Não"
-    },
-    {
-      "nome": "PEDRO MANUEL CIRILO GONSALVES TORRES TOURINO",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "PEDRO SILVA CÔRTES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Pedro Galvão Kimo Vasconcelos Lima",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Pietra França Crispim Vasconcellos",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: SERTRALINA S 1 CAPSULA AO DIA"
+      ]
     },
     {
       "nome": "RAFAEL MARIANO DE ALMEIDA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "BUP XL 150mg S 1 cp ao dia",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: BUP XL 150mg S 1 cp ao dia"
+      ]
     },
     {
-      "nome": "RAFAELA JONAS PALACIOS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "RAFAELA ANGELO TARABOSSI",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "RAPHAEL CAMPOS DE ALMEIDA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "RAFAHELA GARCIA BAZZANELLA",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "RAUL DUARTE BASTOS SENA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "RODRIGO BAZZANELLA FERRI",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
-      "nome": "RICARDO DE SOUZA CERQUEIRA",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: Alergia à pelo de gato, pelo curto de cachorro, poeira e similares.",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "RODRIGO DE SÁ CARVALHO",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: IBUPROFENO; Outro: FARINGITE POR CHOQUE TÉRMIC"
+      ]
     },
     {
-      "nome": "RITA DE CASSIA PASSOS DE CAMPOS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "RUAN MIGUEL GOMES MENEZES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Rafaela Oliveira Cotta Granato de Castro",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Raul Gomes Ledo Rodrigues",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: Amoxicilina"
+      ]
     },
     {
       "nome": "Ravi da Matta Lazzarotti Dantas Garcia",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Liberdya S",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: Liberdya"
+      ]
     },
     {
-      "nome": "Rebeca Portela Santos",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "SANDRO SIDNEY SILVA PEREIRA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Anlodipina 5 mg N Atenolol 50 mg N Enalapril 20 mg N Ritalina La 40 mg N Sinvastatina 20 mg N",
-      "restricao": "Não"
-    },
-    {
-      "nome": "SOFIA RAUTER ELIAS",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: s Problemas DEFICIÊNCIAS ( ) Fisica ( ) Visual ( ) Auditiva ( ) Intelectual ( ) Autismo (*Equiparado as deficiências pela Lei 12.764 de 2012)",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "SOPHIA ROCHA DE SOUZA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Sophia Ataides Goldberg",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "TAYD ALNASSAN MUSTAFA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "TAYM ALNASSAN MUSTAFA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "THIAGO JOSÉ SEBBA PEREIRA BORGES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "TIAGO KRETTLI TRINDADE",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "SAMUEL VAZ PEREIRA FARIA DA PENHA",
+      "qtd": 1,
+      "campos": [
+        "RESTRICAO ALIMENTAR"
+      ],
+      "detalhe": [
+        "Restricao: Sim"
+      ]
     },
     {
       "nome": "TIAGO RONCATO MIZIARA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "SOMATROPINA N MEDICAMENTO SOB REFRIGERAÇÃO OU CAIXA DE ISOPOR",
-      "restricao": "Não"
-    },
-    {
-      "nome": "TITO ZERBINATO DAMO CÓRDOVA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "VALENTINA DE CASTRO NUNES",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "VICTOR RICKLI DE QUEIROS CAMPOS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "VINICIUS BEZERRA LAGRECA BARBOSA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "VINICIUS FRAGA MECENAS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: SOMATROPINA N MEDICAMENTO SOB REFRIGERAÇÃO OU CAIXA DE ISOPO"
+      ]
     },
     {
       "nome": "VINÍCIUS DE SOUZA CERQUEIRA",
-      "campos": "REMÉDIO",
-      "alergias": "Outro: ASMA",
-      "remedio": "AAS (ÁCIDO ACETIL SALICÍLICO) S 100mg MONTELUCASTE DE SÓDIO (MONTELAIR) S 5mg",
-      "restricao": "Não"
+      "qtd": 1,
+      "campos": [
+        "REMEDIO CONTINUO"
+      ],
+      "detalhe": [
+        "Remedio: AAS (ÁCIDO ACETIL SALICÍLICO) S 100mg MONTELUCASTE DE SÓDIO "
+      ]
     },
     {
-      "nome": "VITOR DUARTE MOREIRA",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "Victor Hugo Souto Lemes",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A MEDICAMENTOS"
+      ],
+      "detalhe": [
+        "Alergia med: Medicamentos: Dipirona"
+      ]
     },
     {
-      "nome": "VIVIANE PINTO DE SÁ",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "Vicente Cordeiro Machado",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
-    },
-    {
-      "nome": "ZELIA ALVES MARTINS",
-      "campos": "REMÉDIO",
-      "alergias": "",
-      "remedio": "Nenhum medicamento informado.",
-      "restricao": "Não"
+      "nome": "ÁRTUR FARIA LEAL",
+      "qtd": 1,
+      "campos": [
+        "ALERGIA A PICADAS"
+      ],
+      "detalhe": [
+        "Picada: de inseto: ABELHA"
+      ]
     }
   ]
 }

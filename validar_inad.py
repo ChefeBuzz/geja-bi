@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Gera relação refinada de pulseiras.
-Remédio contínuo = exclui "Nenhum medicamento informado" e marcações "N" (não contínuo)
+Cruza lista de inscritos no acampamento com ficha médica (Dados Médicos).
+Retorna classificação de restrição alimentar para cada inscrito.
 """
-import json, os, base64, urllib.request
+import json, os, base64, urllib.request, unicodedata
 from google.oauth2.service_account import Credentials
 import gspread
 
@@ -20,149 +20,153 @@ ws    = sh.worksheet("Dados Médicos")
 rows  = ws.get_all_values()
 data  = rows[1:]
 
-I_NOME      = 3
-I_ALERGIAS  = 49
+def normaliza(s):
+    """Normaliza para comparação: minúsculo, sem acento, sem espaços duplos."""
+    s = unicodedata.normalize("NFD", str(s))
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return " ".join(s.lower().split())
+
+# Índices
+I_NOME     = 3
 I_RESTRICAO = 45
 I_REST_DET  = 46
-I_MED       = 53
-
-NENHUM = [
-    "nenhum medicamento informado",
-    "nenhum",
-    "nenhuma",
-    "não possui",
-    "nao possui",
-    "não usa",
-    "nao usa",
-    "não toma",
-    "nao toma",
-]
 
 def col(row, i):
     try: return str(row[i]).strip() if i < len(row) else ""
     except: return ""
 
-def tem_remedio_continuo(val):
-    """Só conta como remédio contínuo se tiver 'S' de contínuo na ficha
-    e não for uma das frases de negação."""
-    v = val.strip()
-    vl = v.lower()
-    if not v or any(neg in vl for neg in NENHUM):
-        return False, ""
-    # Verificar se há pelo menos um item com 'S' (contínuo) na listagem
-    # Padrão da ficha: "NomeMed S" ou "NomeMed N" (S=sim contínuo, N=não contínuo/eventual)
-    linhas = [l.strip() for l in v.replace(";","\n").split("\n") if l.strip()]
-    continuos = []
-    for linha in linhas:
-        partes = linha.rsplit(" ", 1)
-        if len(partes) == 2 and partes[1].strip().upper() == "S":
-            continuos.append(partes[0].strip())
-        elif len(partes) == 2 and partes[1].strip().upper() == "N":
-            continue  # eventual, não conta
-        elif len(partes) >= 1 and partes[0].strip():
-            # sem marcação S/N — incluir se não for frase negativa
-            if not any(neg in linha.lower() for neg in NENHUM):
-                continuos.append(linha)
-    if continuos:
-        return True, "; ".join(continuos[:3])
-    return False, ""
+NAO_RESTRICAO = [
+    "nao","não","nenhuma","nenhum","nao possui","não possui",
+    "sem restricao","sem restrição","s/r","","nao tem","não tem"
+]
 
-def tem_picada(alergias):
-    a = alergias.lower()
-    return any(k in a for k in ["picada","inseto","abelha","vespa","formiga",
-                                  "mosquito","aranha","pernilongo","marimbondo",
-                                  "burrachudo"])
+def classifica_restricao(restricao, det):
+    """Classifica tipo de restrição alimentar."""
+    val = (det or restricao).strip()
+    vl  = normaliza(val)
 
-def tem_med_alergia(alergias):
-    a = alergias.lower()
-    return any(k in a for k in ["medicament","remédio","remedio",
-                                  "antibiótico","antibiotic","dipirona",
-                                  "anestesi","penicilina","aspirina",
-                                  "ibuprofeno","alivium","sulfa","tramal",
-                                  "corante","amoxicilina","tilatil",
-                                  "sotalol","ácido acetil","g6pd"])
+    if not val or vl in NAO_RESTRICAO: return None, None
 
-def tem_restricao(restricao, det):
-    nao = ["não possui","nao possui","não tem","nao tem","nenhuma",
-           "não","nao","s/r","sem restrição","sem restricao"]
-    for v in [restricao, det]:
-        vl = v.lower().strip()
-        if not vl or any(n == vl for n in nao):
-            continue
-        if any(neg in vl for neg in nao):
-            continue
-        return True, v
-    return False, ""
+    # Categorias
+    vl_full = normaliza(restricao + " " + det)
+    cat = []
 
-# Processar
-pessoas = []
+    if any(k in vl_full for k in ["lactose","leite","laticinio","laticinios",
+                                    "derivado de leite","proteina do leite",
+                                    "leite de vaca","iogurte","creme de leite",
+                                    "manteiga","requeijao","queijo"]):
+        cat.append("🥛 Lactose / Laticínios")
+
+    if any(k in vl_full for k in ["vegetarian","vegano","vegan","nao come carne",
+                                    "sem carne","ovolacto","ovovegetarian"]):
+        cat.append("🥦 Vegetariano / Vegano")
+
+    if any(k in vl_full for k in ["gluten","glúten"]):
+        cat.append("🌾 Sem Glúten")
+
+    if any(k in vl_full for k in ["frutos do mar","camarao","camarão","peixe",
+                                    "marisco","salmao","atum","tilapia","tilápia"]):
+        cat.append("🦐 Frutos do Mar / Peixe")
+
+    if any(k in vl_full for k in ["ovo","eggs"]) and "ovolacto" not in vl_full:
+        cat.append("🥚 Ovo")
+
+    if any(k in vl_full for k in ["soja"]):
+        cat.append("🫘 Soja")
+
+    if any(k in vl_full for k in ["corante","g6pd","fava"]):
+        cat.append("🎨 Corante / G6PD")
+
+    if any(k in vl_full for k in ["carne de porco","carne suina","carne suína","suino"]):
+        cat.append("🐷 Carne de Porco")
+
+    if any(k in vl_full for k in ["banana","laranja","acai","açaí","oleaginosa",
+                                    "kiwi","salsicha","salsichas"]):
+        cat.append("🍌 Outros Alimentos")
+
+    if any(k in vl_full for k in ["sal","baixo sodio","sodio"]):
+        cat.append("🧂 Baixo Sódio")
+
+    if not cat:
+        cat.append("⚠️ Restrição Específica")
+
+    return cat, val
+
+# Montar dicionário da ficha médica: nome_normalizado → dados
+ficha = {}
 for row in data:
     nome = col(row, I_NOME)
     if not nome or nome.lower() in ("","nan","none"): continue
+    ficha[normaliza(nome)] = {
+        "nome_original": nome,
+        "restricao": col(row, I_RESTRICAO),
+        "restricao_det": col(row, I_REST_DET),
+    }
 
-    alergias  = col(row, I_ALERGIAS)
-    restricao = col(row, I_RESTRICAO)
-    rest_det  = col(row, I_REST_DET)
-    med       = col(row, I_MED)
+# Lista de inscritos (passada como JSON no env)
+inscritos = json.loads(os.environ["INSCRITOS_JSON"])
 
-    p1 = tem_picada(alergias)
-    p2 = tem_med_alergia(alergias)
-    ok_med, med_detalhe = tem_remedio_continuo(med)
-    p3 = ok_med
-    ok_rest, rest_detalhe = tem_restricao(restricao, rest_det)
-    p4 = ok_rest
-
-    qtd = sum([p1, p2, p3, p4])
-    if qtd == 0: continue
-
-    campos = []
-    if p1: campos.append("ALERGIA A PICADAS")
-    if p2: campos.append("ALERGIA A MEDICAMENTOS")
-    if p3: campos.append("REMEDIO CONTINUO")
-    if p4: campos.append("RESTRICAO ALIMENTAR")
-
-    # Detalhe útil para o PDF
-    det = []
-    if p1:
-        trecho = alergias.split("Picada")[1][:60] if "Picada" in alergias else alergias[:60]
-        det.append(f"Picada: {trecho.strip()}")
-    if p2:
-        idx = alergias.lower().find("medicament")
-        trecho = alergias[max(0,idx):idx+60] if idx>=0 else alergias[:60]
-        det.append(f"Alergia med: {trecho.strip()}")
-    if p3:
-        det.append(f"Remedio: {med_detalhe[:60]}")
-    if p4:
-        det.append(f"Restricao: {rest_detalhe[:60]}")
-
-    pessoas.append({
-        "nome":   nome,
-        "qtd":    qtd,
-        "campos": campos,
-        "detalhe":det,
-    })
-
-pessoas.sort(key=lambda x: (-x["qtd"], x["nome"]))
-
-nos4 = [p for p in pessoas if p["qtd"]==4]
-nos3 = [p for p in pessoas if p["qtd"]==3]
-nos2 = [p for p in pessoas if p["qtd"]==2]
-nos1 = [p for p in pessoas if p["qtd"]==1]
-
-print(f"Total: {len(pessoas)}")
-print(f"  4 campos: {len(nos4)}")
-print(f"  3 campos: {len(nos3)}")
-print(f"  2 campos: {len(nos2)}")
-print(f"  1 campo:  {len(nos1)}")
-
-result = {
-    "total": len(pessoas),
-    "nos4": nos4, "nos3": nos3,
-    "nos2": nos2, "nos1": nos1
+resultado = {
+    "sem_restricao":    [],
+    "com_restricao":    {},   # categoria → [nomes]
+    "sem_ficha":        [],
+    "total_inscritos":  len(inscritos),
+    "total_com_rest":   0,
+    "total_sem_rest":   0,
+    "total_sem_ficha":  0,
 }
 
+cat_map = {}  # cat → [(nome, detalhe)]
+
+for nome in inscritos:
+    norm = normaliza(nome)
+
+    # Busca exata
+    entrada = ficha.get(norm)
+
+    # Busca parcial se não achou
+    if not entrada:
+        for k, v in ficha.items():
+            # Verifica se as primeiras 2 palavras batem
+            partes_i = norm.split()
+            partes_k = k.split()
+            if len(partes_i) >= 2 and partes_i[:2] == partes_k[:2]:
+                entrada = v
+                break
+
+    if not entrada:
+        resultado["sem_ficha"].append(nome)
+        resultado["total_sem_ficha"] += 1
+        continue
+
+    cats, det = classifica_restricao(entrada["restricao"], entrada["restricao_det"])
+
+    if cats is None:
+        resultado["sem_restricao"].append(entrada["nome_original"])
+        resultado["total_sem_rest"] += 1
+    else:
+        resultado["total_com_rest"] += 1
+        for cat in cats:
+            if cat not in cat_map:
+                cat_map[cat] = []
+            cat_map[cat].append({
+                "nome": entrada["nome_original"],
+                "detalhe": det[:100]
+            })
+
+resultado["com_restricao"] = cat_map
+
+print(f"Total inscritos: {len(inscritos)}")
+print(f"Com ficha: {len(inscritos)-resultado['total_sem_ficha']}")
+print(f"Sem ficha: {resultado['total_sem_ficha']}")
+print(f"Com restrição: {resultado['total_com_rest']}")
+print(f"Sem restrição: {resultado['total_sem_rest']}")
+print(f"\nCategorias:")
+for cat, pessoas in cat_map.items():
+    print(f"  {cat}: {len(pessoas)} pessoas")
+
 content_b64 = base64.b64encode(
-    json.dumps(result, ensure_ascii=False, indent=2).encode()
+    json.dumps(resultado, ensure_ascii=False, indent=2).encode()
 ).decode()
 
 sha = None
@@ -175,7 +179,7 @@ try:
         sha = json.loads(r.read()).get("sha")
 except: pass
 
-body = {"message": "pulseiras refinadas", "content": content_b64, "branch": "main"}
+body = {"message": "restricao alimentar inscritos", "content": content_b64, "branch": "main"}
 if sha: body["sha"] = sha
 req2 = urllib.request.Request(
     f"https://api.github.com/repos/{REPO}/contents/validacao_resultado.json",
@@ -185,5 +189,5 @@ req2 = urllib.request.Request(
     method="PUT"
 )
 with urllib.request.urlopen(req2) as r:
-    print(f"Salvo! ({r.status})")
+    print(f"\nSalvo! ({r.status})")
 print("FIM")
